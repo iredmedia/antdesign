@@ -6,12 +6,13 @@
     "license": "MIT",
     "private": true,
     "scripts": {
-        "dev": "webpack",
-        "watch": "webpack -w",
-        "start": "node_modules/webpack-dev-server/bin/webpack-dev-server.js  --config webpack.config.js --progress --inline --mode development --watch"
+        "dev": "node_modules/webpack/bin/webpack.js",
+        "watch": "node_modules/webpack/bin/webpack.js -w --mode=development",
+        "start": "node_modules/webpack-dev-server/bin/webpack-dev-server.js  --config webpack.config.js --progress --inline --mode development"
     },
     "dependencies": {
         "antd": "^3.25.2",
+        "moment": "^2.24.0",
         "react": "^16.12.0",
         "react-dom": "^16.12.0"
     },
